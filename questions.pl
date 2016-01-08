@@ -1,3 +1,4 @@
+/* house keeping */
 make :-
   consult("questions.pl").
 
@@ -13,10 +14,6 @@ sub_list(Sub, List) :-
   member(H, List),
   sub_list(T, List).
 
-%%%%% difference/3
-%%%%% List1!
-%%%%% List2!
-%%%%% Diff?
 
 /* the difference between [] and anything is [] */
 difference([], _, []).
